@@ -1,0 +1,178 @@
+#myVideo {
+  position: fixed;
+  min-width: 100%;
+  height: 100vh;
+  margin-right: 0;
+  /* this pushes the video back of the screen*/
+  z-index: -1;
+}
+
+.content {
+  position: fixed;
+  top: 0%;
+  bottom: 0%;
+
+  left: 50%;
+  right: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  width: 50%;
+  padding: 30px;
+}
+.content-right {
+  position: fixed;
+  top: 45%;
+  bottom: 50%;
+  left: 0%;
+  align-items: center;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.213);
+  color: #f1f1f1;
+  width: 50%;
+  z-index: 1;
+}
+
+.navbar ul li a:hover {
+  text-decoration: none;
+
+  color: beige;
+}
+
+.navbar ul li a {
+  width: 100%;
+}
+
+.Shop-item-Title {
+  font-size: xx-large;
+  font-family: "Zeyada", cursive;
+  color: #9b9898;
+  font-weight: 900;
+}
+.Shop-item-details {
+  color: #9b9898;
+  font-family: "Zeyada", cursive;
+  word-spacing: 10;
+  font-size: 17px;
+}
+
+#size,
+#size2,
+#size3,
+#size4,
+#size5,
+#size6 {
+  background-color: #9b9898;
+  color: whitesmoke;
+  font-size: 17px;
+}
+
+#price,
+#price2,
+#price3,
+#price4,
+#price5,
+#price6 {
+  font-size: 10px;
+}
+
+/*---------booking reservation form---------------*/
+.section {
+  position: relative;
+  height: 100vh;
+}
+.section .section-center {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  transform: translateY(-50%);
+}
+#booking {
+  font-family: imprima, sans-serif;
+}
+.booking-form .form-group {
+  position: relative;
+  height: 80px;
+  margin-bottom: 10px;
+  margin-right: -10px;
+  margin-left: -10px;
+}
+.booking-form .form-control {
+  font-family: cantata one, serif;
+  background-color: transparent;
+  height: 80px;
+  font-size: 28px;
+  color: #333;
+  font-weight: 600;
+  background: rgba(255, 255, 255, 0.85);
+  padding-top: 30px;
+}
+.booking-form .form-control::placeholder {
+  color: rgba(51, 51, 51, 0.259);
+}
+
+.booking-form .form-label {
+  color: #8c5d28;
+  font-weight: 700;
+  height: 30px;
+  line-height: 30px;
+  font-size: 14px;
+  letter-spacing: 0.6px;
+  position: absolute;
+  left: 10px;
+  top: 0;
+}
+.booking-form .form-btn {
+  height: 80px;
+  margin-right: -10px;
+  margin-left: -10px;
+  margin-bottom: 10px;
+}
+.booking-form .submit-btn {
+  background: rgba(128, 128, 128, 0.484);
+  font-weight: 900;
+  color: rgba(255, 192, 203, 0.62);
+  height: 80px;
+  font-size: 25px;
+  width: 100%;
+}
+.booking-h {
+  text-align: center;
+}
+.booking-h {
+  margin-bottom: 30px;
+}
+.booking-h h1 {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: gray;
+  margin: 0;
+  font-size: 52px;
+  font-weight: 900;
+}
+.cart-popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -200%);
+  width: 300px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  opacity: 0;
+  z-index: -1;
+  transition: all 0.5s ease-in-out;
+}
+
+.cart-popup.show {
+  opacity: 1;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+}
+
+.cart-popup.hide {
+  opacity: 0;
+  transform: translate(-50%, 200%);
+  z-index: -1;
+}
