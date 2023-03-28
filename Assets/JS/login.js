@@ -8,6 +8,9 @@ function loginaccess() {
   if (user == username && pass == password) {
     location.assign("INDEX.html");
   }
+  else {
+    alert("Incorrect Id or Password! Try Again");
+  }
 }
 
 function redirecthome() {
