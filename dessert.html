@@ -1,0 +1,467 @@
+<!DOCTYPE html5>
+<html lang="en">
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="Assets/CSS/test.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <title>Dessert</title>
+  </head>
+
+  <body style="background-color: black">
+    <!-- background video -->
+    <video autoplay muted loop id="myVideo">
+      <source src="Assets/IMG/production ID_4490626.mp4" type="video/mp4" />
+    </video>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark" id="navbar">
+      <!-- Navbar text-->
+      <span
+        class="navbar-text"
+        style="
+          margin-right: 70%;
+          font-weight: 900;
+          font-family: cursive;
+          font-size: large;
+        "
+      >
+        La Bulesca
+      </span>
+
+      <!-- Links -->
+      <ul class="navbar-nav" style="font-size: small">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="reservations.html">Bookings</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="pizza.html">Pizza</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="sides.html">Side's</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="drinks.html">Drinks</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="dessert.html">Dessert</a>
+        </li>
+        <li class="nav-item">
+          <a
+            href="cart.html"
+            style="text-decoration: none"
+            class="fas fa-shopping-cart"
+          >
+            Cart
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <br /><br />
+    <!--Product items-->
+    <!--cart popup-->
+
+    <div
+      class="cart-popup"
+      id="cart-popup"
+      style="
+        background-color: transparent;
+        box-shadow: 3px 5px 8px 3px gray, 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      "
+    >
+      <h3
+        style="
+          font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+          font-weight: 700;
+          color: orangered;
+        "
+      >
+        Item Added to Cart!
+      </h3>
+      <button
+        style="
+          font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+          font-weight: 700;
+          font-size: 19px;
+          color: orangered;
+          background-color: blanchedalmond;
+          margin-right: 12px;
+        "
+        onclick="closePopup()"
+      >
+        Continue Shopping
+      </button>
+      <a
+        style="
+          font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+          font-weight: 700;
+          font-size: 19px;
+          color: orangered;
+          text-decoration: none;
+        "
+        href="cart.html"
+        >View Cart</a
+      >
+    </div>
+    <!--Product-1-->
+    <h1
+      class="h1"
+      style="
+        margin-top: 95px;
+        text-align: center;
+        color: #aa4a30;
+        font-style: italic;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-weight: 900;
+        font-size: xx-large;
+      "
+    >
+      A Sweet Side
+    </h1>
+    <div class="container-fluid row" id="productParent">
+      <div
+        class="container-fluid col-md-6 Shop-Item"
+        id="images2"
+        style="
+          box-shadow: 3px 5px 8px 3px gray, 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          text-align: center;
+          margin-top: 55px;
+        "
+      >
+        <p class="Shop-item-Title" style="margin-top: 90px; font-size: x-large">
+          Choco Lava Cake
+        </p>
+        <img
+          class="img-fluid rounded p-3 mb-2 rounded border border-white rounded shop-item-Img"
+          src="Assets/IMG/Screenshot 2023-03-23 at 12.37.59 AM.png"
+          id="img1"
+          style="width: 60%; margin-top: 0px"
+        />
+
+        <div id="paraImages" class="Shop-item-details">
+          <br />
+          <span style="font-size: 15px"
+            >New and improved! A decadent chocolate cake with a gooey chocolate
+            centre.</span
+          >
+
+          <br />
+          <br />
+
+          <p id="priceid">
+            Price: $<span id="price" data-item-price="12.00">12.00</span>
+          </p>
+
+          <br />
+
+          <button
+            class="btn btn-primary"
+            id="add-to-cart-btn13"
+            data-item-id="007"
+            data-item-name="Choco Lava Cake"
+            data-item-price="12.00"
+            data-item-qty="1"
+            style="font-size: 15px; background-color: transparent"
+            ]
+          >
+            Add to cart
+          </button>
+          <br />
+          <span class="h6" id="itemNumber2"></span>
+          <br />
+          <br />
+        </div>
+      </div>
+      <!--Product-2-->
+
+      <div
+        class="container-fluid col-md-6 Shop-Item"
+        style="
+          box-shadow: 3px 5px 8px 3px gray, 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          text-align: center;
+          margin-top: 55px;
+        "
+        id="images2"
+      >
+        <p class="Shop-item-Title" style="margin-top: 90px">
+          Mini Dutch Pancakes
+        </p>
+        <img
+          class="img-fluid rounded p-3 mb-2 rounded border border-white rounded shop-item-Img"
+          src="Assets/IMG/Screenshot 2023-03-23 at 12.39.23 AM.png"
+          id="img1"
+          style="width: 60%; margin-top: 0px"
+          alt="mini pancakes"
+        />
+
+        <div id="paraImages" class="Shop-item-details">
+          <br />
+          <span style="font-size: 15px"
+            >12 pack of oven-baked mini Dutch pancakes drizzled with butter and
+            dusted with icing sugar</span
+          >
+
+          <br />
+          <br />
+
+          <p id="priceid">
+            Price: $<span id="price2" data-item-price="20.00">20.00</span>
+          </p>
+
+          <br />
+
+          <button
+            class="btn btn-primary"
+            id="add-to-cart-btn14"
+            data-item-id="014"
+            data-item-name="Mini Dutch Pancakes"
+            data-item-price="20.00"
+            data-item-qty="1"
+            style="font-size: 15px; background-color: transparent"
+          >
+            Add to cart
+          </button>
+          <br />
+          <span class="h6" id="itemNumber2"></span>
+          <br />
+          <br />
+        </div>
+      </div>
+      <!--Product-3-->
+
+      <div
+        class="container-fluid col-md-6 Shop-Item"
+        style="
+          box-shadow: 3px 5px 8px 3px gray, 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          text-align: center;
+          margin-top: 55px;
+        "
+        id="images2"
+      >
+        <p class="Shop-item-Title">Salted Caramel Chocolate Mousee</p>
+        <img
+          class="img-fluid rounded p-3 mb-2 rounded border border-white rounded shop-item-Img"
+          src="Assets/IMG/Screenshot 2023-03-23 at 12.41.28 AM.png"
+          id="img1"
+          style="width: 60%; margin-top: 0px"
+          alt="choco mousse"
+        />
+
+        <div id="paraImages" class="Shop-item-details">
+          <br />
+          <span style="font-size: 15px"
+            >Rich creamy Belgian Chocolate mousse with gooey, salted caramel
+            sauce
+          </span>
+
+          <br />
+          <br />
+
+          <p id="priceid">
+            Price: $<span id="price3" data-item-price="19.99">19.99</span>
+          </p>
+
+          <br />
+
+          <button
+            class="btn btn-primary"
+            id="add-to-cart-btn15"
+            data-item-id="015"
+            data-item-name="Salted Caramel Chocolate Mousee"
+            data-item-price="19.99"
+            data-item-qty="1"
+            style="font-size: 15px; background-color: transparent"
+          >
+            Add to cart
+          </button>
+          <br />
+          <span class="h6" id="itemNumber2"></span>
+          <br />
+          <br />
+        </div>
+      </div>
+      <!--Product-4-->
+
+      <div
+        class="container-fluid col-md-6 Shop-Item"
+        style="
+          box-shadow: 3px 5px 8px 3px gray, 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          text-align: center;
+          margin-top: 55px;
+        "
+        id="images2"
+      >
+        <p class="Shop-item-Title">Churros</p>
+        <img
+          class="img-fluid rounded p-3 mb-2 rounded border border-white rounded shop-item-Img"
+          src="Assets/IMG/Screenshot 2023-03-23 at 12.42.39 AM.png"
+          id="img1"
+          style="width: 60%; margin-top: 0px"
+          alt="churros"
+        />
+
+        <div id="paraImages" class="Shop-item-details">
+          <br />
+          <span style="font-size: 15px">
+            4 oven baked Churros dusted with cinnamon sugar and served with a
+            chocolate dipping sauce</span
+          >
+
+          <br />
+          <br />
+
+          <p id="priceid">
+            Price: $<span id="price4" data-item-price="9.99">9.99</span>
+          </p>
+
+          <br />
+
+          <button
+            class="btn btn-primary"
+            id="add-to-cart-btn16"
+            data-item-id="016"
+            data-item-name="Churros"
+            data-item-price="9.99"
+            data-item-qty="1"
+            style="font-size: 15px; background-color: transparent"
+          >
+            Add to cart
+          </button>
+          <br />
+          <span class="h6" id="itemNumber2"></span>
+          <br />
+          <br />
+        </div>
+      </div>
+      <!--Product-5-->
+
+      <div
+        class="container-fluid col-md-6 Shop-Item"
+        style="
+          box-shadow: 3px 5px 8px 3px gray, 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          text-align: center;
+          margin-top: 55px;
+        "
+        id="images2"
+      >
+        <p class="Shop-item-Title">Choco Lava Puff Roll</p>
+        <img
+          class="img-fluid rounded p-3 mb-2 rounded border border-white rounded shop-item-Img"
+          src="Assets/IMG/Screenshot 2023-03-23 at 12.43.32 AM.png"
+          id="img1"
+          style="width: 60%; margin-top: 0px"
+          alt="lava puff rolls"
+        />
+
+        <div id="paraImages" class="Shop-item-details">
+          <br />
+          <span style="font-size: 15px"
+            >Indulgent, oozing lava chocolate wrapped in a crispy, golden puff
+            pastry, finished with a dusting of icing sugar</span
+          >
+
+          <br />
+          <br />
+
+          <p id="priceid">
+            Price: $<span id="price5" data-item-price="15.99">15.99</span>
+          </p>
+
+          <br />
+
+          <button
+            class="btn btn-primary"
+            id="add-to-cart-btn17"
+            data-item-id="017"
+            data-item-name="Choco Lava Puff Roll"
+            data-item-price="15.99"
+            data-item-qty="1"
+            style="font-size: 15px; background-color: transparent"
+          >
+            Add to cart
+          </button>
+          <br />
+          <span class="h6" id="itemNumber2"></span>
+          <br />
+          <br />
+        </div>
+      </div>
+      <!--Product-6-->
+
+      <div
+        class="container-fluid col-md-6 Shop-Item"
+        style="
+          box-shadow: 3px 5px 8px 3px gray, 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          text-align: center;
+          margin-top: 55px;
+        "
+        id="images2"
+      >
+        <p class="Shop-item-Title">Pure New Zealand Lamington Ice cream</p>
+        <img
+          class="img-fluid rounded p-3 mb-2 rounded border border-white rounded shop-item-Img"
+          src="Assets/IMG/Screenshot 2023-03-23 at 12.44.55 AM.png"
+          id="img1"
+          style="width: 60%; margin-top: 0px"
+          alt="lamington ice cream"
+        />
+
+        <div id="paraImages" class="Shop-item-details">
+          <br />
+          <span style="font-size: 15px"
+            >The classic lamington reinvented with swirls of exotic coconut
+            cream and velvety raspberry gelato. Handcrafted in New
+            Zealand.</span
+          >
+
+          <br />
+          <br />
+
+          <p id="priceid">
+            Price: $<span id="price6" data-item-price="20.00">20.00</span>
+          </p>
+
+          <br />
+
+          <button
+            class="btn btn-primary"
+            id="add-to-cart-btn18"
+            data-item-id="018"
+            data-item-name="Pure NZ Lamington Ice cream"
+            data-item-price="20.00"
+            data-item-qty="1"
+            style="font-size: 15px; background-color: transparent"
+          >
+            Add to cart
+          </button>
+          <br />
+          <span class="h6" id="itemNumber2"></span>
+          <br />
+          <br />
+        </div>
+      </div>
+    </div>
+    <script src="Assets/JS/dessert.js"></script>
+  </body>
+</html>
