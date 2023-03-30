@@ -5,10 +5,10 @@ function loginaccess() {
   var user = document.getElementById("email").value;
   var pass = document.getElementById("pass").value;
 
-  if (user == username && pass == password) {
-    location.assign("INDEX.html");
-  }
-  else {
+   if (user == username && pass == password) {
+    location.assign("pizza.html");
+    localStorage.setItem("username", user);
+  } else {
     alert("Incorrect Id or Password! Try Again");
   }
 }
