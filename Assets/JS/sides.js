@@ -73,3 +73,15 @@ function closePopup() {
     cartPopup.classList.remove("show", "hide");
   }, 500);
 }
+
+
+var username = localStorage.getItem("username");
+if (username) {
+  document.getElementById("username").textContent = username;
+} else {
+  window.location.href = "login.html";
+}
+function logout() {
+  localStorage.removeItem("username");
+  window.location.href = "login.html";
+}
