@@ -1,6 +1,6 @@
 function loginaccess() {
-  var username = "reye";
-  var password = "123";
+  var username = "user";
+  var password = "P@ssw0rd123";
 
   var user = document.getElementById("email").value;
   var pass = document.getElementById("pass").value;
