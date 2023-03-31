@@ -3,9 +3,9 @@ function availability() {
   var time = document.getElementById("time").value;
   const date = new Date();
   let day = date.getDate();
-
-  if (dateuser < day) {
-    alert("Sorry! You are checking for a day that has already passed by! ");
+//just check if user entered a date or not
+  if (dateuser) {
+    alert("Please enter a date!");
   } else {
     alert(
       `Congratulations! We do have availability for ${dateuser} at ${time}`
@@ -13,6 +13,7 @@ function availability() {
   }
 }
 
+//just for the login name at the top of the screen to work
 var username = localStorage.getItem("username");
 if (username) {
   document.getElementById("username").textContent = username;
