@@ -74,7 +74,7 @@ function closePopup() {
   }, 500);
 }
 
-
+//this is for the top welcome user to work
 var username = localStorage.getItem("username");
 if (username) {
   document.getElementById("username").textContent = username;
