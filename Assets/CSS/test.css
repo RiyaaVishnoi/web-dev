@@ -41,7 +41,7 @@
 .navbar ul li a {
   width: 100%;
 }
-
+/*shoppppp itemss*/
 .Shop-item-Title {
   font-size: xx-large;
   font-family: "Zeyada", cursive;
@@ -149,6 +149,8 @@
   font-size: 52px;
   font-weight: 900;
 }
+
+/*CART POP UP*/
 .cart-popup {
   position: fixed;
   top: 50%;
