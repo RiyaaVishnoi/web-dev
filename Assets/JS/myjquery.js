@@ -55,7 +55,7 @@ $(document).ready(function () {
       email: {
         required: true,
         email: true,
-        maxlength: 3,
+       
       },
     },
     messages: {
